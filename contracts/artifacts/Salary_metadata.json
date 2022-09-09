@@ -1,0 +1,306 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "emp_id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "emp_name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "deposit_balance",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "eth_address",
+						"type": "address"
+					}
+				],
+				"name": "AddEmployee",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "oldOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnerSet",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "added_fund",
+						"type": "uint256"
+					}
+				],
+				"name": "addFund",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "deposit_balance",
+						"type": "uint256"
+					}
+				],
+				"name": "checkDeposit",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "deposit_balance",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "transferdAmmount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "charges",
+						"type": "uint256"
+					}
+				],
+				"name": "transferdFund",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "emp_name",
+						"type": "string"
+					}
+				],
+				"name": "updateItSelf",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_emp_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_emp_name",
+						"type": "string"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_eth_address",
+						"type": "address"
+					}
+				],
+				"name": "add_employee",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_emp_id",
+						"type": "uint256"
+					}
+				],
+				"name": "add_fund",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_emp_id",
+						"type": "uint256"
+					}
+				],
+				"name": "check_deposit_balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "emp_det",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "emp_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "emp_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deposit_balance",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "eth_address",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "get_contract_balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_emp_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_ammount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer_fund",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_emp_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_emp_name",
+						"type": "string"
+					}
+				],
+				"name": "update_it_self",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/4_Employee.sol": "Salary"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/4_Employee.sol": {
+			"keccak256": "0xe2cf9e35cbb3c98691b8bb0efa7b1c32d33cc4a061ea926a06fc15c5c6ac64ad",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://416ee438864ee5c32e0e895931b3bfde0fedf14e392c4b280679aa14af2a98b4",
+				"dweb:/ipfs/QmSth2thWFZFH3grXXxVRFsvdUEsmwAkju49NnffrP57Zy"
+			]
+		},
+		"hardhat/console.sol": {
+			"keccak256": "0x60b0215121bf25612a6739fb2f1ec35f31ee82e4a8216c032c8243d904ab3aa9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6e29880d33dd479bb046ba306993d26ccb779a4b1d94a046cb3567f22948bb4d",
+				"dweb:/ipfs/QmfTY1qzPt5C63Wc7y6JqfZr5899NRvXYdCpyLzR5FXQic"
+			]
+		}
+	},
+	"version": 1
+}
