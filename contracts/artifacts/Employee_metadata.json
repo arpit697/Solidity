@@ -276,7 +276,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/4_Employee.sol": "Employee"
+			"contracts/Employee.sol": "Employee"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -290,7 +290,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/4_Employee.sol": {
+		"contracts/Employee.sol": {
 			"keccak256": "0xe2cf9e35cbb3c98691b8bb0efa7b1c32d33cc4a061ea926a06fc15c5c6ac64ad",
 			"license": "GPL-3.0",
 			"urls": [
