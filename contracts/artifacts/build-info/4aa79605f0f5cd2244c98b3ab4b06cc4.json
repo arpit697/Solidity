@@ -1,0 +1,71 @@
+{
+	"id": "4aa79605f0f5cd2244c98b3ab4b06cc4",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/Lottery.sol": {
+				"content": "// SPDX-License-Identifier:MIT"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "3420",
+				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.7;\"\n--> contracts/Lottery.sol\n\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.7;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "contracts/Lottery.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"contracts/Lottery.sol": {
+				"ast": {
+					"absolutePath": "contracts/Lottery.sol",
+					"exportedSymbols": {},
+					"id": 1,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [],
+					"src": "30:0:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
